@@ -1,0 +1,64 @@
+// vars
+$bodyColor: #06030F;
+$mainTextColor: #FFFFFF;
+$secondTextColor: #747474;
+$btnsTextColor: #366EDC;
+
+// global styles
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:#06030F;
+    color: $mainTextColor;
+}
+
+.wraper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    max-width: 1240px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// game_section
+@import 'game_section';
+
+
+
+
