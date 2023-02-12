@@ -1,0 +1,185 @@
+// global styles
+* {
+    box-sizing: border-box;
+}
+body  {
+    background-color: #06030F;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// main
+
+.menu-to-centre {
+    display: flex;
+}
+
+.m-d-m {
+    height: 360px;
+}
+
+/* Minecraft blocks */
+
+.blocks-to-centre {
+    display: flex;
+    align-items: center;
+    padding-top: 92px;
+} 
+
+/* minecraft green */
+
+#block1{
+    height: 360px;
+    width: 620px;
+    border-radius: 15px;
+    background: linear-gradient(131.39deg, #1DBE53 -11.11%, #ACE238 73.42%);
+    border-radius: 15px;
+}
+
+.creeper {
+    position: relative;
+    bottom: 410px;
+    left: 340px;
+}
+
+.text-blocks {
+    position: relative;
+    z-index: 2;
+    font-family: Manrope;
+    height: 86px;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 43px;
+    text-align: left;
+    padding: 10px 40px 40px 40px;
+    margin-right: 75px;
+    color: #FFFFFF;
+}
+
+.text-money-area {
+    display: flex;
+    gap: 100px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.text-money {
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.procent {
+    padding-left: 20px;
+    color: #FFE817;
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.not-money {
+    padding-left: 20px;
+    font-family: 'Manrope';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.buy-minecraft {
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 63px;
+    width: 144px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: none;
+}
+
+.buy-minecraft-text {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 23px;
+}
+
+.button-favourite {
+    display: flex;
+    align-items: center;
+}
+
+.favourite  {
+    margin-top: 40px;
+    margin-left: 18px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+/* minecraft orange */
+
+.menu-to-centre-nav {
+    height: 360px;
+}
+
+#block2 {
+    margin-left: 20px;
+    height: 360px;
+    width: 620px;
+    border-radius: 15px;
+    background: linear-gradient(131.39deg, #FF3D23 -11.11%, #FDA828 73.42%);
+    border-radius: 15px;
+}
+
+.players {
+    position: relative;
+    bottom: 425px;
+    left: 370px;
+}
+
+// menu-list
+
+.navigation {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;   
+}
+
+.navigation-menu {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    padding-top: 180px;
+    padding-left: 40px;
+}
+
+.text-nav-menu {
+    color: #868686;
+}
+
+.text-nav-menu:hover {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 20px;
+}
