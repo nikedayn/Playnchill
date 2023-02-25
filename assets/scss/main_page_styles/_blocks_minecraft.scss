@@ -57,7 +57,7 @@ a {
 .text-blocks {
     position: relative;
     z-index: 2;
-    font-family: Manrope;
+    font-family: 'Manrope';
     height: 86px;
     font-size: 36px;
     font-weight: 800;
@@ -159,27 +159,26 @@ a {
 
 // menu-list
 
-.navigation {
-    font-family: 'Manrope';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;   
-}
-
 .navigation-menu {
     display: flex;
     text-align: center;
     gap: 30px;
     padding-top: 180px;
-    padding-left: 40px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 60px;
 }
 
 .text-nav-menu {
     color: #868686;
-}
-
-.text-nav-menu:hover {
-    color: #FFFFFF;
-    border-bottom: 2px solid #FFFFFF;
-    padding-bottom: 20px;
+    &:hover {
+        color: #FFFFFF;
+    }
+    &:focus {
+        color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+        padding-bottom: 20px;
+    }
 }
