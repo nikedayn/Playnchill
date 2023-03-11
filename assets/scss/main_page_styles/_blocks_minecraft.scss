@@ -71,7 +71,7 @@ a {
 .text-money-area {
     display: flex;
     gap: 100px;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-left: 40px;
 }
 
@@ -104,7 +104,7 @@ a {
 
 .buy-minecraft {
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 60px;
     height: 63px;
     width: 144px;
     background: rgba(255, 255, 255, 0.1);
@@ -122,11 +122,10 @@ a {
 
 .button-favourite {
     display: flex;
-    align-items: center;
 }
 
 .favourite  {
-    margin-top: 40px;
+    margin-top: 80px;
     margin-left: 18px;
     font-family: 'Manrope';
     font-style: normal;
@@ -155,6 +154,98 @@ a {
     position: relative;
     bottom: 425px;
     left: 370px;
+}
+
+// blocks laptop
+
+@media (max-width: 1024px) {
+    #block1 {
+        height: 320px;
+        width: 480px;
+    }
+
+    #block2  {
+        height: 320px;
+        width: 480px;
+        margin-left: 10px;
+    }
+
+    .creeper {
+        width: 45%;
+        position: relative;
+        bottom: 360px;
+        left: 280px;
+    }
+
+    .text-blocks {
+        font-size: 28px;
+        font-weight: 600;
+        padding: 10px 40px 40px 40px;
+    }
+
+    .players {
+        width: 60%;
+        position: relative;
+        bottom: 350px;
+        left: 280px;
+    }
+}
+
+// blocks tablet
+
+@media (max-width: 768px) {
+    #block1 {
+        height: 260px;
+        width: 370px;
+    }
+
+    #block2 {
+        height: 260px;
+        width: 370px;
+        margin-left: 10px;
+    }
+
+    .creeper {
+        width: 45%;
+        position: relative;
+        bottom: 295px;
+        left: 215px;
+    }
+
+    .players {
+        width: 60%;
+        position: relative;
+        bottom: 285px;
+        left: 195px;
+    }
+
+    .text-blocks {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 40px 40px 10px;
+    }
+
+    .text-money-area {
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+
+    .procent {
+        padding-left: 2px;
+    }
+
+    .not-money {
+        padding-left: 2px;
+    }
+
+    .buy-minecraft {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .favourite  {
+        margin-top: 40px;
+    }
 }
 
 // menu-list
