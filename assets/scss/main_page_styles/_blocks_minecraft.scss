@@ -253,23 +253,40 @@ a {
 .navigation-menu {
     display: flex;
     text-align: center;
-    gap: 30px;
+    gap: 0 30px;
     padding-top: 180px;
     font-family: 'Manrope';
     font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 60px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 15px;
+    }
 }
 
 .text-nav-menu {
     color: #868686;
     &:hover {
         color: #FFFFFF;
+        @media (max-width: 768px) {
+            color: #77BE1D;
+        }
     }
-    &:focus {
-        color: #FFFFFF;
-        border-bottom: 2px solid #FFFFFF;
-        padding-bottom: 20px;
+}
+
+.if_u_in_some_section {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 20px;
+    @media (max-width: 768px) {
+        color: #77BE1D;
+        border-bottom: 2px solid #77BE1D;
+        padding-bottom: 5px;
     }
 }
