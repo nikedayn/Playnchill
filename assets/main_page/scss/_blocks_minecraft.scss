@@ -1,25 +1,3 @@
-// global styles
-* {
-    box-sizing: border-box;
-}
-body  {
-    background-color: #06030F;
-}
-
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 // main
 
 .menu-to-centre {
@@ -250,7 +228,7 @@ a {
 
 // menu-list
 
-.navigation-menu {
+.game-navigation-menu {
     display: flex;
     text-align: center;
     gap: 0 30px;

@@ -56,8 +56,17 @@ button {
     cursor: pointer;
 }
 
-// game_section
-@import 'game_section';
+// header
+@import 'header';
 
-// blocks-minecraft 
+// slider
+@import 'slider';
+
+// top games
+@import 'topgames';
+
+// blocks minecraft 
 @import 'blocks_minecraft';
+
+// game section
+@import 'game_section';

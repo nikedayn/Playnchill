@@ -1,0 +1,103 @@
+.topText {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+    background: conic-gradient(from 180deg at 50.93% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), radial-gradient(78.31% 80.25% at 11.77% 28.24%, rgba(110, 124, 251, 0.52) 7.61%, rgba(251, 66, 255, 0.52) 35.14%, rgba(255, 66, 247, 0.52) 63.45%, rgba(66, 119, 255, 0.52) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, conic-gradient(from 180deg at 49.45% 50%, #E8EDF1 -3.44deg, #D6DFE6 56.25deg, #FAFBFC 133.38deg, #F6D0FF 215.62deg, #D7E0E7 311.43deg, #F7F8F9 313.84deg, #E8EDF1 356.56deg, #D6DFE6 416.25deg), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-blend-mode: screen, normal, normal, normal;
+}
+
+.bestGames {
+    display: flex;
+    gap: 20px;
+}
+
+.gameHover>img {
+    width: 250px;
+    height: 350px;
+    
+}
+
+.gameHover>button:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.gametext>h1 {
+    background: conic-gradient(from 180deg at 50.93% 50%, #000000 0deg, rgba(255, 255, 255, 0.72) 16.88deg, #000000 88.12deg, rgba(255, 255, 255, 0.72) 151.87deg, #000000 225deg, rgba(255, 255, 255, 0.72) 288.75deg, #000000 360deg), radial-gradient(78.31% 80.25% at 11.77% 28.24%, rgba(110, 124, 251, 0.52) 7.61%, rgba(251, 66, 255, 0.52) 35.14%, rgba(255, 66, 247, 0.52) 63.45%, rgba(66, 119, 255, 0.52) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, conic-gradient(from 180deg at 49.45% 50%, #E8EDF1 -3.44deg, #D6DFE6 56.25deg, #FAFBFC 133.38deg, #F6D0FF 215.62deg, #D7E0E7 311.43deg, #F7F8F9 313.84deg, #E8EDF1 356.56deg, #D6DFE6 416.25deg), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-blend-mode: screen, normal, normal, normal;
+}
+
+.gametext {
+    background-color: black;
+    position: absolute;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 70px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.inCart {
+    position: absolute;
+    width: 200px;
+    height: 63px;
+    background: #77BE1D;
+    border-radius: 10px;
+    margin-top: -70px;
+    margin-left: 25px;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.gamesBotText {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-top: 4px;
+}
+
+.gamesBotText>p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 225px;
+}
+
+.xshText {
+    display: flex;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #747474;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.secondP {
+    margin-left: -5px;
+}
+
+.xshText>svg {
+    margin-top: 2px;
+}
