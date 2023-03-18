@@ -4,47 +4,32 @@ let btns = {
     prev: document.querySelector('#btn-prev'),
     next: document.querySelector('#btn-next')
 }
-let img = document.querySelector('#img-slider')
+let img = document.querySelector('#slider')
 
 btns.prev.addEventListener('click', () => {
-    // if (imgNow === 0) {
-    //     imgNow = 2
-    //     img.src = 'http://127.0.0.1:5500/asset/img/'+arrImg[2]
-    // } else { 
-    //     imgNow--
-    //     img.src = 'http://127.0.0.1:5500/assets/img/'+arrImg[imgNow]
-    // }
     if (imgNow === 2){
-        imgNow = 0
-        img.src = 'http://127.0.0.1:5500/assets/main_page/img/'+arrImg[imgNow]
+        imgNow = 0;
+        img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     } else { 
-    imgNow++
-    img.src = 'http://127.0.0.1:5500/assets/main_page/img/'+arrImg[imgNow]
+        imgNow++;
+        img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
 })
 btns.next.addEventListener('click', () => {
-    // if (imgNow === 3) {
-    //     imgNow = 1
-    //     img.src = 'http://127.0.0.1:5500/assets/img/'+arrImg[imgNow]
-    // } else { 
-    //     imgNow++
-    //     img.src = 'http://127.0.0.1:5500/assets/img/'+arrImg[imgNow]
-    // }
     if (imgNow === 2){
-        imgNow = 0
-        img.src = 'http://127.0.0.1:5500/assets/main_page/img/'+arrImg[imgNow]
+        imgNow = 0;
+        img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     } else { 
-    imgNow++
-    img.src = 'http://127.0.0.1:5500/assets/main_page/img/'+arrImg[imgNow]
+        imgNow++;
+        img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
 })
 setInterval(() => {
     if (imgNow === 2){
-        imgNow = 0
-        img.src = 'http://127.0.0.1:5500/assets/main_page/img/'+arrImg[imgNow]
-    } else { 
-    imgNow++
-    img.src = 'http://127.0.0.1:5500/assets/main_page/img/'+arrImg[imgNow]
+        imgNow = 0;
+        img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
+    } else {
+        imgNow++;
+        img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
 },5000)
-

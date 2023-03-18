@@ -4,6 +4,7 @@ header {
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
+    margin-bottom: 40px;
 }
 
 .svg {
@@ -80,18 +81,16 @@ header {
     text-align: center;
     gap: 30px;
     margin-left: 235px;
-}
-
-.text-nav-menu {
-    transition: 0.5s;
-    color: #868686;
-}
-
-.text-nav-menu:hover {
-    transition: 0.5s;
-    color: #FFFFFF;
-    border-bottom: 2px solid #FFFFFF;
-    padding-bottom: 10px;
+    .navigation-menu-item-link {
+        transition: 0.5s;
+        color: #868686;
+        &:hover {
+            transition: 0.5s;
+            color: #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
+            padding-bottom: 10px;
+        }
+    }
 }
 
 .reg {

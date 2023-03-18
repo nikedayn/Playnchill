@@ -1,4 +1,8 @@
 // список игр и его елементы
+.game_section {
+    margin-bottom: 80px;
+}
+
 .game_list {
     display: flex;
     flex-wrap: wrap;
@@ -31,14 +35,38 @@
     .img_and_div {
         position: relative;
         width: auto;
+        margin-bottom: 20px;
         @media (max-width: 768px) {
             position: static;
             width: 30%;
-        }
+        }     
         img {
+            margin-bottom: 0;
             @media (max-width: 768px) {
                 width: 100%;
             }
+        }
+        .inCart {
+            position: absolute;
+            width: calc(100% - 40px);
+            height: 63px;
+            background: #77BE1D;
+            border-radius: 10px;
+            bottom: 20px;
+            left: calc((100%/2) - (calc(100% - 40px)/2));
+            opacity: 0;
+            transition: 0.5s;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            @media (max-width: 768px) {
+                display: none;
+            }
+            &:hover{
+                opacity: 100%;
+                transition: 0.5s;
+            } 
         }
     }
 
@@ -164,6 +192,26 @@
         }
     }
 
+    .points {
+        color: $secondTextColor;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    
+        .point_and_text{
+            display: flex;
+            align-items: center;
+            column-gap: 9px;
+        }
+    
+        .peculiarities {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+            white-space: nowrap;
+        }
+    }
+
     .game_name {
         font-family: 'Roboto';
         font-size: 16px;
@@ -173,26 +221,6 @@
             font-size: 14px;
             font-weight: 400;
             line-height: 18px;
-        }
-    }
-
-    .points {
-        color: $secondTextColor;
-        display: flex;
-        align-items: center;
-        column-gap: 20px;
-
-        .point_and_text{
-            display: flex;
-            align-items: center;
-            column-gap: 9px;
-        }
-
-        .peculiarities {
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 18px;
-            white-space: nowrap;
         }
     }
     .achievements_mobile {
