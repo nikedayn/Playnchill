@@ -8,13 +8,18 @@ let list = [
         percents: 0.4,
         name: 'Flower',
         categories: {
-            new: true,
+            //красный блок
             hit: false,
+
+            //оранжевый блок
+            new: true,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: false,
-            activation: true,
             boost: false,
+            pumping: false,
+            steamAccount: true,
+            activation: true,
             epicGames: true
         }
     },
@@ -24,13 +29,18 @@ let list = [
         percents: 1,
         name: 'Hohokum',
         categories: {
-            new: true,
+            //красный блок
             hit: true,
+
+            //оранжевый блок
+            new: true,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: true,
-            activation: true,
             boost: true,
+            pumping: true,
+            steamAccount: true,
+            activation: true,
             epicGames: true
         } 
     },
@@ -40,13 +50,18 @@ let list = [
         percents: 0.15,
         name: 'E WITNE',
         categories: {
-            new: false,
+            //красный блок
             hit: false,
+
+            //оранжевый блок
+            new: false,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: false,
-            activation: true,
             boost: false,
+            pumping: false,
+            steamAccount: true,
+            activation: true,
             epicGames: true
         }
     },
@@ -56,13 +71,18 @@ let list = [
         percents: 0.2,
         name: 'Eastshade',
         categories: {
-            new: false,
+            //красный блок
             hit: true,
+
+            //оранжевый блок
+            new: false,
+
+            //категории в низу блока игры
             key: false,
-            steamAccount: false,
-            pumping: false,
-            activation: false,
             boost: false,
+            pumping: false,
+            steamAccount: false,
+            activation: false,
             epicGames: true
         }
     },
@@ -72,13 +92,18 @@ let list = [
         percents: 0.35,
         name: 'Shape Of The World',
         categories: {
-            new: true,
+            //красный блок
             hit: false,
+
+            //оранжевый блок
+            new: true,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: false,
-            activation: false,
             boost: true,
+            pumping: false,
+            steamAccount: true,
+            activation: false,
             epicGames: false
         }
     },
@@ -88,13 +113,18 @@ let list = [
         percents: 0.15,
         name: 'JOURNEY',
         categories: {
-            new: false,
+            //красный блок
             hit: false,
+
+            //оранжевый блок
+            new: false,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: false,
-            pumping: true,
-            activation: true,
             boost: false,
+            pumping: true,
+            steamAccount: false,
+            activation: true,
             epicGames: false
         }
     },
@@ -104,13 +134,18 @@ let list = [
         percents: 0.2,
         name: 'A Short Hike',
         categories: {
-            new: false,
+            //красный блок
             hit: false,
+
+            //оранжевый блок
+            new: false,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: true,
-            activation: false,
             boost: true,
+            pumping: true,
+            steamAccount: true,
+            activation: false,
             epicGames: true
         }
     },
@@ -120,13 +155,18 @@ let list = [
         percents: 0.4,
         name: 'LittleBIG Planet',
         categories: {
-            new: true,
+            //красный блок
             hit: true,
+
+            //оранжевый блок
+            new: true,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: false,
-            activation: false,
             boost: false,
+            pumping: false,
+            steamAccount: true,
+            activation: false,
             epicGames: true
         }
     },
@@ -136,13 +176,18 @@ let list = [
         percents: 0.1,
         name: 'UNRAVEL',
         categories: {
-            new: false,
+            //красный блок
             hit: true,
+
+            //оранжевый блок
+            new: false,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: false,
-            activation: true,
             boost: false,
+            pumping: false,
+            steamAccount: true,
+            activation: true,
             epicGames: false
         }
     },
@@ -152,13 +197,18 @@ let list = [
         percents: 0.1,
         name: 'Seasons after Fall',
         categories: {
-            new: true,
+            //красный блок
             hit: false,
+
+            //оранжевый блок
+            new: true,
+
+            //категории в низу блока игры
             key: false,
-            steamAccount: true,
-            pumping: true,
-            activation: true,
             boost: false,
+            pumping: true,
+            steamAccount: true,
+            activation: true,
             epicGames: false
         }
     },
@@ -168,13 +218,18 @@ let list = [
         percents: 0.4,
         name: 'Yonder',
         categories: {
-            new: false,
+            //красный блок
             hit: false,
+
+            //оранжевый блок
+            new: false,
+
+            //категории в низу блока игры
             key: true,
-            steamAccount: true,
-            pumping: false,
-            activation: false,
             boost: true,
+            pumping: true,
+            steamAccount: true,
+            activation: false,
             epicGames: true
         }
     },
@@ -184,108 +239,71 @@ let list = [
         percents: 0.17,
         name: 'Minecraft',
         categories: {
-            new: false,
+            //красный блок
             hit: true,
+
+            //оранжевый блок
+            new: false,
+
+            //категории в низу блока игры
             key: false,
-            steamAccount: false,
-            pumping: false,
-            activation: true,
             boost: true,
+            pumping: false,
+            steamAccount: false,
+            activation: true,
             epicGames: false
         }
     },
 ]
 
-// let listAccount = [
-//     {
-//         imgSrc: 'assets/main_page/img/little_big_planet.png',
-//         price: '1000',
-//         name: 'LittleBIG Planet'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/hohokum.png',
-//         price: '1 000',
-//         name: 'Hohokum' 
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/minecraft.png',
-//         price: '240',
-//         name: 'Minecraft'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/seasons_after_fall.png',
-//         price: '560',
-//         name: 'Seasons after Fall'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/eastshade.png',
-//         price: '500',
-//         name: 'Eastshade'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/journey.png',
-//         price: '300',
-//         name: 'JOURNEY'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/e_witne.png',
-//         price: '350',
-//         name: 'E WITNE'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/a_short_hike.png',
-//         price: '250',
-//         name: 'A Short Hike'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/unravel.png',
-//         price: '250',
-//         name: 'UNRAVEL'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/shape_of_the_world.png',
-//         price: '200',
-//         name: 'Shape Of The World'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/yonder.png',
-//         price: '100',
-//         name: 'Yonder'
-//     },
-//     {
-//         imgSrc: 'assets/main_page/img/flower.png',
-//         price: '250',
-//         name: 'Flower'
-//     },
-// ]
-
 let links = document.querySelectorAll('.game-navigation-menu-item-link');
+console.log(links);
+// linkThatActive = links.filter(link => link);
+// console.log(links.filter(link => link));
+console.log(list)
 
 btns.addEventListener ('click', (e) => {
-    if (e.target.id == 'new') {
+    if (e.target.classList.contains('if_u_in_some_section')) {
         generateGames(list);
         removeClass();
-        e.target.classList.add('if_u_in_some_section');
     }
-    else if (e.target.id == 'hit') {
-        generateGames(list);
-        removeClass();
-        e.target.classList.add('if_u_in_some_section');
-    }
-    else if (e.target.id == 'account') {
-        generateGames(list);
-        removeClass();
-        e.target.classList.add('if_u_in_some_section');
-    }
-    else if (e.target.id == 'keys') {
-        generateGames(list);
-        removeClass();
-        e.target.classList.add('if_u_in_some_section');
-    }
-    else if (e.target.id == 'pumping') {
-        generateGames(list);
-        removeClass();
-        e.target.classList.add('if_u_in_some_section');
+    else {
+        if (e.target.id == 'new') {
+            let listNew = list.filter(game => game.categories.new);
+            generateGames(listNew);
+            removeClass();
+            e.target.classList.add('if_u_in_some_section');
+        }
+        else if (e.target.id == 'hit') {
+            let listNew = list.filter(game => game.categories.hit);
+            generateGames(listNew);
+            removeClass();
+            e.target.classList.add('if_u_in_some_section');
+        }
+        else if (e.target.id == 'account') {
+            let listNew = list.filter(game => (game.categories.epicGames || game.categories.steamAccount));
+            generateGames(listNew);
+            removeClass();
+            e.target.classList.add('if_u_in_some_section');
+        }
+        else if (e.target.id == 'keys') {
+            let listNew = list.filter(game => game.categories.key);
+            generateGames(listNew);
+            removeClass();
+            e.target.classList.add('if_u_in_some_section');
+        }
+        else if (e.target.id == 'activation') {
+            let listNew = list.filter(game => game.categories.activation);
+            generateGames(listNew);
+            removeClass();
+            e.target.classList.add('if_u_in_some_section');
+        }
+        else if (e.target.id == 'pumping') {
+            let listNew = list.filter(game => game.categories.pumping);
+            generateGames(listNew);
+            removeClass();
+            e.target.classList.add('if_u_in_some_section');
+        }
     }
 })
 
@@ -295,17 +313,18 @@ let removeClass = () => {
     })
 }
 
+let counter = 0;
+
 let generateGames = (currentList) => {
     gameList.innerHTML = ''
     currentList.forEach((game) => { 
+        counter++;
         gameList.innerHTML += `
             <li class="game_list_item">
                 <div class="img_and_div">
-                    <img src=${game.imgSrc}>
-                    <div class="achievements">
-                        <div class="new">
-                            <p class="novelties">Новинка</p>
-                        </div>
+                    <img src="${game.imgSrc}">
+                    <div class="achievements" id="achievementsBlock${counter}">
+                        
                     </div>
                     <button class="inCart">В кошик</button>
                 </div>
@@ -316,22 +335,11 @@ let generateGames = (currentList) => {
                         <h3 class="price_before">${game.price} ₴</h3>
                     </div>
                     <h4 class="game_name">${game.name}</h4>
-                    <div class="points">
-                        <div class="point_and_text">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
-                            </svg>
-                            <p class="peculiarities">Ключ</p>
-                        </div>
-                        <div class="point_and_text">
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
-                            </svg>
-                            <p class="peculiarities">Аккаунт Steam</p>
-                        </div>
+                    <div class="points" id="pointsBlock${counter}">
+
                     </div>
-                    <div class="achievements_mobile">
-                        <p class="novelties">Новинка</p>
+                    <div class="achievements_mobile" id="achievementsBlockMobile${counter}">
+                        
                     </div>
                     <div class="container_icon">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -346,5 +354,141 @@ let generateGames = (currentList) => {
                 </div>
             </li>
         `
+        //красный блок
+        if(game.categories.hit) {
+            categoryHitForGame();
+        }
+
+        //оранжевый блок
+        if(game.categories.new) {
+            categoryNewForGame();
+        }
+
+        //категории в низу блока игры
+        if(game.categories.pumping) {
+            categoryPumpingForGame();
+        } else if (game.categories.boost) {
+            categoryBoostForGame();
+        } else if(game.categories.key) {
+            categoryKeyForGame();
+        }
+
+        if (game.categories.epicGames) {
+            categoryEpicGamesForGame();
+        } else if (game.categories.activation) {
+            categoryActivationForGame();
+        } else if(game.categories.steamAccount) {
+            categorySteamAccountForGame();
+        }
     })
+    counter = 0;
 }
+
+//варианты категорий
+//хит продаж
+let categoryHitForGame = () => {
+    let achievements = document.querySelector(`#achievementsBlock${counter}`);
+    let achievementsMobile = document.querySelector(`#achievementsBlockMobile${counter}`);
+    achievements.innerHTML += `
+        <div class="hit">
+            <p class="bestseller">Хіт продажу</p>
+        </div>
+    `
+    achievementsMobile.innerHTML += `
+        <p class="bestseller">Хіт продажу</p>
+    `
+}
+
+//новинки
+let categoryNewForGame = () => {
+    let achievements = document.querySelector(`#achievementsBlock${counter}`);
+    let achievementsMobile = document.querySelector(`#achievementsBlockMobile${counter}`);
+    achievements.innerHTML += `
+        <div class="new">
+            <p class="novelties">Новинка</p>
+        </div>
+    `
+    achievementsMobile.innerHTML += `
+        <p class="novelties">Новинка</p>
+    `
+}
+
+//ключ
+let categoryKeyForGame = () => {
+    let pointsBlock = document.querySelector(`#pointsBlock${counter}`);
+    pointsBlock.innerHTML += `
+        <div class="point_and_text">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
+            </svg>
+            <p class="peculiarities">Ключ</p>
+        </div>
+    `
+}
+
+//прокачка
+let categoryPumpingForGame = () => {
+    let pointsBlock = document.querySelector(`#pointsBlock${counter}`);
+    pointsBlock.innerHTML += `
+        <div class="point_and_text">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
+            </svg>
+            <p class="peculiarities">Прокачка</p>
+        </div>
+    `
+}
+
+//буст
+let categoryBoostForGame = () => {
+    let pointsBlock = document.querySelector(`#pointsBlock${counter}`);
+    pointsBlock.innerHTML += `
+        <div class="point_and_text">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
+            </svg>
+            <p class="peculiarities">Буст</p>
+        </div>
+    `
+}
+
+//активация
+let categoryActivationForGame = () => {
+    let pointsBlock = document.querySelector(`#pointsBlock${counter}`);
+    pointsBlock.innerHTML += `
+        <div class="point_and_text">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
+            </svg>
+            <p class="peculiarities">Активація</p>
+        </div>
+    `
+}
+
+//epic games
+let categoryEpicGamesForGame = () => {
+    let pointsBlock = document.querySelector(`#pointsBlock${counter}`);
+    pointsBlock.innerHTML += `
+        <div class="point_and_text">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
+            </svg>
+            <p class="peculiarities">Epic Games</p>
+        </div>
+    `
+}
+
+//Аккаунт Steam
+let categorySteamAccountForGame = () => {
+    let pointsBlock = document.querySelector(`#pointsBlock${counter}`);
+    pointsBlock.innerHTML += `
+        <div class="point_and_text">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="7" fill="#3D394A"/>
+            </svg>
+            <p class="peculiarities">Аккаунт Steam</p>
+        </div>
+    `
+}
+
+generateGames(list);

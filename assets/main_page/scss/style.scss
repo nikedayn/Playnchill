@@ -1,5 +1,6 @@
 // vars
 $bodyColor: #06030F;
+$mainSiteColor:#77BE1D;
 $mainTextColor: #FFFFFF;
 $secondTextColor: #747474;
 $btnsTextColor: #366EDC;
@@ -47,11 +48,13 @@ ul, ol {
 
 a {
     text-decoration: none;
+    color: $mainTextColor;
 }
 
 button {
     display: block;
     border: 0;
+    padding: 0;
     background-color: transparent;
     cursor: pointer;
 }

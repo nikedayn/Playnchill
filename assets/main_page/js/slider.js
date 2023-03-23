@@ -7,11 +7,12 @@ let btns = {
 let img = document.querySelector('#slider')
 
 btns.prev.addEventListener('click', () => {
-    if (imgNow === 2){
-        imgNow = 0;
+    if (imgNow === 0) {
+        imgNow = 2;
         img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
-    } else { 
-        imgNow++;
+    }
+    else if ( 0 < imgNow < 2){ 
+        imgNow--;
         img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
 })
