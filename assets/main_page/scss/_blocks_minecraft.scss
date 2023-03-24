@@ -2,6 +2,7 @@
 
 .menu-to-centre {
     display: flex;
+    position: relative;
 }
 
 .m-d-m {
@@ -226,13 +227,69 @@
     }
 }
 
+.button-next {
+    display: none;
+    color: white;
+}
+
+.button-prev {
+    display: none;
+    color: white;
+}
+
+@media (max-width: 425px) {
+    .button-next {
+        display: block;
+        color: #06030F;
+        border-radius: 50%;
+    }
+
+    .button-prev {
+        display: block;
+        color: #06030F;
+    }
+
+    #block1 {
+        width: 350px;
+    }
+
+    #block2 {
+        display: none;
+        margin-left: -3px;
+        width: 350px;
+    }
+
+    .button-next, .button-prev {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: black;
+        opacity: 50%;
+        filter: blur(0.8px);
+        color: #FFFFFF;
+        position: absolute;
+    }
+    
+    .button-next {
+        right: -15px;
+        top: calc(50% - 25px);
+        top: 199px;
+    }
+    
+    .button-prev {
+        left: -15px;
+        top: calc(50% - 25px);
+        top: 199px;
+    }
+}
+
 // menu-list
 
 .game-navigation-menu {
     display: flex;
     text-align: center;
     gap: 0 30px;
-    padding-top: 180px;
+    padding-top: 100px;
     font-family: 'Manrope';
     font-weight: 500;
     font-size: 20px;

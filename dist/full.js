@@ -535,10 +535,19 @@ burgerMenuBtn.addEventListener('click', () => {
   \*********************************************/
 /***/ (() => {
 
+// елементы для desctop
 let languageBtn = document.querySelector('#btnLanguageChange');
-let languageBtnSvg = document.querySelector('#btnLanguageChange > svg');
-let languageList = document.querySelector('.language_list');
+let languageList = document.querySelector('#languageList');
+let listSvg = document.querySelector(`#btnLanguageChange > svg`);
+console.log(languageList);
+
+// елементы для desctop
+let languageBtnMobile = document.querySelector('#btnLanguageChangeMobile');
+let languageListMobile = document.querySelector('#languageListMobile');
+let listSvgMobile = document.querySelector(`#btnLanguageChangeMobile > svg`);
+
 let flagForLanguageMenu = 0;
+let flagForLanguageMenuMobile = 0;
 let flagForLanguageli = 0;
 let classForli = 'green';
 
@@ -546,18 +555,62 @@ let removeClass = (arr, classThatMustBeDeleted) => {
     arr.forEach((elementOfArr) => {
         elementOfArr.classList.remove(`${classThatMustBeDeleted}`);
     })
-}
+};
 
 languageBtn.addEventListener('click', () => {
     if(flagForLanguageMenu == 0){
-        languageBtnSvg.style.transform = 'scaleY(1)';
+        listSvg.style.transform = 'scaleY(1)';
         languageList.style.top = '40px';
         flagForLanguageMenu = 1;
     }
     else if(flagForLanguageMenu == 1){
-        languageBtnSvg.style.transform = 'scaleY(-1)';
+        listSvg.style.transform = 'scaleY(-1)';
         languageList.style.top = '-110px';
         flagForLanguageMenu = 0;
+    }
+});
+
+languageBtnMobile.addEventListener('click', () => {
+    if(flagForLanguageMenu == 0){
+        listSvgMobile.style.transform = 'scaleY(1)';
+        languageListMobile.style.left = '50px';
+        flagForLanguageMenu = 1;
+    }
+    else if(flagForLanguageMenu == 1){
+        listSvgMobile.style.transform = 'scaleY(-1)';
+        languageListMobile.style.left = '-200%';
+        flagForLanguageMenu = 0;
+    }
+});
+
+languageListMobile.addEventListener('click', (e) => {
+    if(e.target.classList.contains('language_list_item_link')){
+        if(flagForLanguageli == 0){
+            console.log(flagForLanguageli);
+            let li = e.target.parentNode;
+            let liArr = document.querySelectorAll('.language_list_item');
+            if(!li.classList.contains('green')){
+                removeClass(liArr, classForli);
+                li.classList.add('green');
+                flagForLanguageli = 1;
+            }
+            else if(li.classList.contains('green')){
+                li.classList.remove('green');
+            }
+        }
+        else if(flagForLanguageli == 1){
+            console.log(flagForLanguageli);
+            let li = e.target.parentNode;
+            let liArr = document.querySelectorAll('.language_list_item');
+            if(!li.classList.contains('green')){
+                removeClass(liArr, classForli);
+                li.classList.add('green');
+            }
+            else if(li.classList.contains('green')){
+                li.classList.remove('green');
+                flagForLanguageli = 0;
+            }
+        }
     }
 })
 
@@ -590,6 +643,41 @@ languageList.addEventListener('click', (e) => {
             }
         }
     }
+})
+
+
+/***/ }),
+
+/***/ "./assets/main_page/js/minecraft_slider.js":
+/*!*************************************************!*\
+  !*** ./assets/main_page/js/minecraft_slider.js ***!
+  \*************************************************/
+/***/ (() => {
+
+let btnNext = document.querySelector('.button-next')
+
+let btnPrev = document.querySelector('.button-prev')
+
+let block1 = document.querySelector('#block1')
+
+let block2 = document.querySelector('#block2')
+
+let picture1 = document.querySelector('.creeper')
+
+let picture2 = document.querySelector('.players')
+
+btnNext.addEventListener('click', ()=>{
+    block1.style.display='none'
+    block2.style.display='block'
+    picture1.style.display='none'
+    picture2.style.display='block'
+})
+
+btnPrev.addEventListener('click', ()=>{
+    block1.style.display='block'
+    block2.style.display='none'
+    picture1.style.display='block'
+    picture2.style.display='none'
 })
 
 /***/ }),
@@ -719,13 +807,17 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api */ "./assets/main_page/js/api.js");
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_api__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _language_btn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./language_btn */ "./assets/main_page/js/language_btn.js");
-/* harmony import */ var _language_btn__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_language_btn__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _burger_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./burger_menu */ "./assets/main_page/js/burger_menu.js");
-/* harmony import */ var _burger_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_burger_menu__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider */ "./assets/main_page/js/slider.js");
-/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_slider__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider */ "./assets/main_page/js/slider.js");
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_slider__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _language_btn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./language_btn */ "./assets/main_page/js/language_btn.js");
+/* harmony import */ var _language_btn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_language_btn__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _burger_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./burger_menu */ "./assets/main_page/js/burger_menu.js");
+/* harmony import */ var _burger_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_burger_menu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _minecraft_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./minecraft_slider */ "./assets/main_page/js/minecraft_slider.js");
+/* harmony import */ var _minecraft_slider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_minecraft_slider__WEBPACK_IMPORTED_MODULE_4__);
 // import './header';
+
+
 
 
 

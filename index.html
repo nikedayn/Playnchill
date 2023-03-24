@@ -26,12 +26,20 @@
                         </div>
                     </div>
                     <div class="languade_and_profile">
-                        <button class="btnLanguageChange" id="btnChange">
+                        <button class="btnLanguageChange" id="btnLanguageChangeMobile">
                             <p>UA</p>
                             <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2.59454L1.2543 5L0 3.50432L4 0L8 3.50432L6.7457 5L4 2.59454Z" fill="#77BE1D"/>
                             </svg>
                         </button>
+                        <ul class="language_list" id="languageListMobile">
+                            <li class="language_list_item">
+                                <a href="#" class="language_list_item_link">Українська (UA)</a>
+                            </li>
+                            <li class="language_list_item">
+                                <a href="#" class="language_list_item_link">English (EN)</a>
+                            </li>
+                        </ul>
                         <button class="reg">
                             <p>Зареєструватися/Увійти</p>
                             <div class="avatar">
@@ -83,7 +91,7 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.313 1.07184L5.3985 18L3.68713 16.9282L14.6016 0L16.313 1.07184Z" fill="white" fill-opacity="0.1"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5661 15.6994C17.3427 15.6994 17.9723 15.0789 17.9723 14.3134C17.9723 13.548 17.3427 12.9275 16.5661 12.9275C15.7895 12.9275 15.1599 13.548 15.1599 14.3134C15.1599 15.0789 15.7895 15.6994 16.5661 15.6994ZM16.5661 17.6979C18.4626 17.6979 20 16.1826 20 14.3134C20 12.4443 18.4626 10.929 16.5661 10.929C14.6696 10.929 13.1322 12.4443 13.1322 14.3134C13.1322 16.1826 14.6696 17.6979 16.5661 17.6979Z" fill="white" fill-opacity="0.1"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.4339 5.07239C4.21054 5.07239 4.84014 4.45187 4.84014 3.68642C4.84014 2.92097 4.21054 2.30044 3.4339 2.30044C2.65726 2.30044 2.02767 2.92097 2.02767 3.68642C2.02767 4.45187 2.65726 5.07239 3.4339 5.07239ZM3.4339 7.07084C5.33039 7.07084 6.8678 5.55558 6.8678 3.68642C6.8678 1.81725 5.33039 0.301991 3.4339 0.301991C1.53741 0.301991 0 1.81725 0 3.68642C0 5.55558 1.53741 7.07084 3.4339 7.07084Z" fill="white" fill-opacity="0.1"/>
-                                </svg>                                
+                                </svg>   
                             </button>
                         </li>
                         <li class="profile_attributes_list">
@@ -128,7 +136,7 @@
                             <img src="assets/main_page/img/avatar_for_unregistered_users.png" alt="avatar_for_unregistered_users">
                         </div>
                     </button>
-                    <ul class="language_list">
+                    <ul class="language_list" id="languageList">
                         <li class="language_list_item">
                             <a href="#" class="language_list_item_link">Українська (UA)</a>
                         </li>
@@ -381,6 +389,7 @@
             <section class="minecraft-centre-flex">
                 <div class="container">
                     <ul class="menu-to-centre">
+                        <button class="button-prev"><</button>
                         <li class="m-d-m">
                             <div>
                                 <div class="blocks-to-centre">
@@ -412,7 +421,8 @@
                                 </div>
                             </div>
                             <img class="players" src="assets/main_page/img/players.png" alt="" srcset="">
-                        </li>   
+                        </li>
+                        <button class="button-next">></button> 
                     </ul>
                 </div>
             </section>

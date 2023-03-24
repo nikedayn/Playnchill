@@ -1,125 +1,150 @@
-.slide {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    margin-bottom: 100px;
-}
-
-.slider {
-    background-image: url(/assets/main_page/img/1.png);
-    background-size: cover;
-    padding: 178px 120px 130px 120px;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    position: relative;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-    img{
-        margin-bottom: 20px;
-    }
-}
-
-.btn-next, .btn-prev {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: black;
-    opacity: 50%;
-    filter: blur(0.8px);
-    color: #FFFFFF;
-    position: absolute;
-}
-
-.btn-next {
-    right: -20px;
-    top: calc(50% - 25px);
-}
-
-.btn-prev {
-    left: -20px;
-    top: calc(50% - 25px);
-}
-
-.slider_text {
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    .slider_btns {
-        display: flex;
-        column-gap: 10px;
-    }
-    .price_tags {
-        display: flex;
-        align-items: center;
-        column-gap: 18px;
-    }
-}
-
-.slider_texto {
-    font-size: 20px;
-    width: 500px;
-}
-
-.price {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-}
-
-.percent {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    color: #77BE1D;
-}
-
-.newPrice {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.cart {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    background: #FFFFFF;
-    color: black;
-    border-radius: 15px;
-    padding: 23px 40px 27px;
-    transition: 0.5s;
-}
-
-.cart:hover {
-    background-color: #77BE1D;
-    transition: 0.5s;
-}
-
-.favorite {
-    // position: absolute;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 23px 40px 27px;
-    gap: 10px;
-    color: white;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    // margin-left: 600px;
-    // margin-top: -110px;
-    transition: 0.5s;
-}
-
-.favorite:hover {
-    background-color: #77BE1D;
-    color: black;
-    transition: 0.5s;
+.slide { 
+    font-family: 'Manrope'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 24px; 
+    margin-bottom: 100px; 
+} 
+ 
+.slider { 
+    background-image: url(/assets/main_page/img/1.png); 
+    background-size: cover; 
+    padding: 178px 120px 130px 120px; 
+    background-repeat: no-repeat; 
+    border-radius: 20px; 
+    position: relative; 
+    flex-direction: column; 
+    align-items: start; 
+    width: 100%; 
+    img{ 
+        margin-bottom: 20px; 
+    } 
+} 
+ 
+.btn-next, .btn-prev { 
+    height: 50px; 
+    width: 50px; 
+    border-radius: 50%; 
+    background-color: black; 
+    opacity: 50%; 
+    filter: blur(0.8px); 
+    color: #FFFFFF; 
+    position: absolute; 
+} 
+ 
+.btn-next { 
+    right: -20px; 
+    top: calc(50% - 25px); 
+} 
+ 
+.btn-prev { 
+    left: -20px; 
+    top: calc(50% - 25px); 
+} 
+ 
+.slider_text { 
+    display: flex; 
+    flex-direction: column; 
+    row-gap: 40px; 
+    .slider_btns { 
+        display: flex; 
+        column-gap: 10px; 
+    } 
+    .price_tags { 
+        display: flex; 
+        align-items: center; 
+        column-gap: 18px; 
+    } 
+} 
+ 
+.slider_texto { 
+    font-size: 20px; 
+} 
+ 
+.price { 
+    font-family: 'Manrope'; 
+    font-style: normal; 
+    font-weight: 800; 
+    font-size: 32px; 
+} 
+ 
+.percent { 
+    font-family: 'Manrope'; 
+    font-style: normal; 
+    font-weight: 800; 
+    font-size: 20px; 
+    color: #77BE1D; 
+} 
+ 
+.newPrice { 
+    font-family: 'Manrope'; 
+    font-style: normal; 
+    font-weight: 600; 
+    font-size: 20px; 
+    color: rgba(255, 255, 255, 0.3); 
+} 
+ 
+.cart { 
+    font-family: 'Manrope'; 
+    font-style: normal; 
+    font-weight: 600; 
+    font-size: 18px; 
+    background: #FFFFFF; 
+    color: black; 
+    border-radius: 15px; 
+    padding: 23px 40px 27px; 
+    transition: 0.5s; 
+} 
+ 
+.cart:hover { 
+    background-color: #77BE1D; 
+    transition: 0.5s; 
+} 
+ 
+.favorite { 
+    // position: absolute; 
+    font-family: 'Manrope'; 
+    font-style: normal; 
+    font-weight: 600; 
+    font-size: 18px; 
+    padding: 23px 40px 27px; 
+    gap: 10px; 
+    color: white; 
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 15px; 
+    // margin-left: 600px; 
+    // margin-top: -110px; 
+    transition: 0.5s; 
+} 
+ 
+.favorite:hover { 
+    background-color: #77BE1D; 
+    color: black; 
+    transition: 0.5s; 
+} 
+ 
+@media (max-width: 425px) { 
+    .slider { 
+        padding: 37px 30px; 
+    } 
+ 
+    .slider_texto { 
+    font-family: 'Manrope'; 
+    font-style: normal; 
+    font-weight: 100; 
+    font-size: 16px; 
+    line-height: 26px; 
+    } 
+ 
+    .price { 
+        font-size: 26px; 
+    } 
+ 
+    .cart { 
+        display: none; 
+    } 
+ 
+    .favorite { 
+        display: none; 
+    } 
 }
