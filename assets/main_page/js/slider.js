@@ -25,6 +25,7 @@ btns.next.addEventListener('click', () => {
         img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
 })
+
 setInterval(() => {
     if (imgNow === 2){
         imgNow = 0;
@@ -33,4 +34,5 @@ setInterval(() => {
         imgNow++;
         img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
-},5000)
+},5000);
+    

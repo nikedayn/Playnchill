@@ -266,59 +266,56 @@ let list = [
 ]
 
 let links = document.querySelectorAll('.game-navigation-menu-item-link');
-console.log(links);
-// linkThatActive = links.filter(link => link);
-// console.log(links.filter(link => link));
-console.log(list)
+let classForLinks = 'if_u_in_some_section'
 
 btns.addEventListener ('click', (e) => {
     if (e.target.classList.contains('if_u_in_some_section')) {
         generateGames(list);
-        removeClass();
+        removeClass(links, classForLinks);
     }
     else {
         if (e.target.id == 'new') {
             let listNew = list.filter(game => game.categories.new);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'hit') {
             let listNew = list.filter(game => game.categories.hit);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'account') {
             let listNew = list.filter(game => (game.categories.epicGames || game.categories.steamAccount));
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'keys') {
             let listNew = list.filter(game => game.categories.key);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'activation') {
             let listNew = list.filter(game => game.categories.activation);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'pumping') {
             let listNew = list.filter(game => game.categories.pumping);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
     }
 })
 
-let removeClass = () => {
-    links.forEach((link) => {
-        link.classList.remove('if_u_in_some_section');
+let removeClass = (arr, classThatMustBeDeleted) => {
+    arr.forEach((elementOfArr) => {
+        elementOfArr.classList.remove(`${classThatMustBeDeleted}`);
     })
 }
 
@@ -504,26 +501,96 @@ generateGames(list);
 
 /***/ }),
 
-/***/ "./assets/main_page/js/header.js":
-/*!***************************************!*\
-  !*** ./assets/main_page/js/header.js ***!
-  \***************************************/
+/***/ "./assets/main_page/js/burger_menu.js":
+/*!********************************************!*\
+  !*** ./assets/main_page/js/burger_menu.js ***!
+  \********************************************/
 /***/ (() => {
 
-let btnChange = document.querySelector('#btnChange')
-let svg = document.querySelector('.svg')
-let rotate = 180
+let burgerMenu = document.querySelector('.burger_block');
+let burgerMenuBtn = document.querySelector('.burgerBtn');
+let body = document.querySelector('body');
+let flagForBurger = 0;
 
-btnChange.onfocus= ()=> {
-    if(rotate == 180) {
-        rotate = 0;
+burgerMenuBtn.addEventListener('click', () => {
+    if(flagForBurger == 0){
+        burgerMenuBtn.classList.add('activated_burger_btn');
+        flagForBurger = 1;
+        burgerMenu.style.left = 0;
+        body.style.overflowY = 'hidden';
     }
-    else {
-        rotate = 180;
+    else if(flagForBurger == 1){
+        burgerMenuBtn.classList.remove('activated_burger_btn');
+        flagForBurger = 0;
+        burgerMenu.style.left = "100%";
+        body.style.overflowY = 'visible';
     }
-    svg.style.transform = `rotate(${rotate}deg)`
+})
+
+/***/ }),
+
+/***/ "./assets/main_page/js/language_btn.js":
+/*!*********************************************!*\
+  !*** ./assets/main_page/js/language_btn.js ***!
+  \*********************************************/
+/***/ (() => {
+
+let languageBtn = document.querySelector('#btnLanguageChange');
+let languageBtnSvg = document.querySelector('#btnLanguageChange > svg');
+let languageList = document.querySelector('.language_list');
+let flagForLanguageMenu = 0;
+let flagForLanguageli = 0;
+let classForli = 'green';
+
+let removeClass = (arr, classThatMustBeDeleted) => {
+    arr.forEach((elementOfArr) => {
+        elementOfArr.classList.remove(`${classThatMustBeDeleted}`);
+    })
 }
 
+languageBtn.addEventListener('click', () => {
+    if(flagForLanguageMenu == 0){
+        languageBtnSvg.style.transform = 'scaleY(1)';
+        languageList.style.top = '40px';
+        flagForLanguageMenu = 1;
+    }
+    else if(flagForLanguageMenu == 1){
+        languageBtnSvg.style.transform = 'scaleY(-1)';
+        languageList.style.top = '-110px';
+        flagForLanguageMenu = 0;
+    }
+})
+
+languageList.addEventListener('click', (e) => {
+    if(e.target.classList.contains('language_list_item_link')){
+        if(flagForLanguageli == 0){
+            console.log(flagForLanguageli);
+            let li = e.target.parentNode;
+            let liArr = document.querySelectorAll('.language_list_item');
+            if(!li.classList.contains('green')){
+                removeClass(liArr, classForli);
+                li.classList.add('green');
+                flagForLanguageli = 1;
+            }
+            else if(li.classList.contains('green')){
+                li.classList.remove('green');
+            }
+        }
+        else if(flagForLanguageli == 1){
+            console.log(flagForLanguageli);
+            let li = e.target.parentNode;
+            let liArr = document.querySelectorAll('.language_list_item');
+            if(!li.classList.contains('green')){
+                removeClass(liArr, classForli);
+                li.classList.add('green');
+            }
+            else if(li.classList.contains('green')){
+                li.classList.remove('green');
+                flagForLanguageli = 0;
+            }
+        }
+    }
+})
 
 /***/ }),
 
@@ -560,6 +627,7 @@ btns.next.addEventListener('click', () => {
         img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
 })
+
 setInterval(() => {
     if (imgNow === 2){
         imgNow = 0;
@@ -568,7 +636,8 @@ setInterval(() => {
         imgNow++;
         img.style.backgroundImage = `url('http://127.0.0.1:5500/assets/main_page/img/${arrImg[imgNow]}')`;
     }
-},5000)
+},5000);
+    
 
 /***/ })
 
@@ -648,12 +717,16 @@ var __webpack_exports__ = {};
   !*** ./assets/main_page/js/script.js ***!
   \***************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ "./assets/main_page/js/header.js");
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider */ "./assets/main_page/js/slider.js");
-/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_slider__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api */ "./assets/main_page/js/api.js");
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_api__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./api */ "./assets/main_page/js/api.js");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_api__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _language_btn__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./language_btn */ "./assets/main_page/js/language_btn.js");
+/* harmony import */ var _language_btn__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_language_btn__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _burger_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./burger_menu */ "./assets/main_page/js/burger_menu.js");
+/* harmony import */ var _burger_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_burger_menu__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider */ "./assets/main_page/js/slider.js");
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_slider__WEBPACK_IMPORTED_MODULE_3__);
+// import './header';
+
 
 
 

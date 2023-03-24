@@ -257,59 +257,56 @@ let list = [
 ]
 
 let links = document.querySelectorAll('.game-navigation-menu-item-link');
-console.log(links);
-// linkThatActive = links.filter(link => link);
-// console.log(links.filter(link => link));
-console.log(list)
+let classForLinks = 'if_u_in_some_section'
 
 btns.addEventListener ('click', (e) => {
     if (e.target.classList.contains('if_u_in_some_section')) {
         generateGames(list);
-        removeClass();
+        removeClass(links, classForLinks);
     }
     else {
         if (e.target.id == 'new') {
             let listNew = list.filter(game => game.categories.new);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'hit') {
             let listNew = list.filter(game => game.categories.hit);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'account') {
             let listNew = list.filter(game => (game.categories.epicGames || game.categories.steamAccount));
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'keys') {
             let listNew = list.filter(game => game.categories.key);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'activation') {
             let listNew = list.filter(game => game.categories.activation);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
         else if (e.target.id == 'pumping') {
             let listNew = list.filter(game => game.categories.pumping);
             generateGames(listNew);
-            removeClass();
+            removeClass(links, classForLinks);
             e.target.classList.add('if_u_in_some_section');
         }
     }
 })
 
-let removeClass = () => {
-    links.forEach((link) => {
-        link.classList.remove('if_u_in_some_section');
+let removeClass = (arr, classThatMustBeDeleted) => {
+    arr.forEach((elementOfArr) => {
+        elementOfArr.classList.remove(`${classThatMustBeDeleted}`);
     })
 }
 

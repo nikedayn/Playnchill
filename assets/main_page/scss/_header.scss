@@ -21,6 +21,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: relative;
     @media (max-width: 768px) {
         display: none;
     }
@@ -28,11 +29,16 @@ header {
     .btnLanguageChange {
         display: flex;
         align-items: center;
-        position: relative;
         column-gap: 5px;
+        height: 30px;
 
         p {
             color: $mainTextColor;
+        }
+
+        svg{
+            transition: transform 0.3s;
+            transform: scaleY(-1);
         }
     }
 
@@ -138,12 +144,13 @@ header {
     background-color: rgba(196, 196, 196, 0.05);
     text-decoration: none;
     border: none;
-    // width: 45%;
+    width: 45%;
     height: 60px;
     border-radius: 15px;
     padding: 0 30px;
     color: white;
     text-decoration: none;
+    position: relative;
     @media (max-width: 768px) {
         display: none;
     }
@@ -152,42 +159,68 @@ header {
         border: none;
         outline: none;
         padding: 0;
+        width: 75%;
         color: $secondTextColor;
         &::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.38); transition: opacity .5s};
         &:focus::-webkit-input-placeholder {opacity: 0};
     }
 }
 
-//части бургерного меню
+.language_list {
+    position: absolute;
+    top: -110px;
+    background-color: #100D18;
+    padding: 5px 7px 10px 7px;
+    border-radius: 3px;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    transition: top 0.2s;
+    z-index: 2;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-color: #100D18;
+        z-index: -1;
+        display: block;
+        border-radius: 5px;
+        transform: rotate(45deg);
+        top: -5px;
+        left: 4px;
+    }
+
+    .language_list_item {
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .green {
+        background-color: $mainSiteColor;
+    }
+}
+
+//части кнопки бургерного меню
 .burgerBtn {
     display: none;
     width: 30px;
     height: 30px;
     justify-content: center;
     align-items: center;
-    &:focus {
-        transform: rotate(45deg);
-        .burger_menu {
-            width: 15px;
-            &::before {
-                width: 15px;
-                bottom: 0;
-                transform: rotate(-90deg);
-            }
-            &::after {
-                width: 15px;
-                top: -1.75px;
-            }
-        }
-    }
+    z-index: 2;
+    transition: all 0.5s;
     @media (max-width: 768px) {
         display: flex;
     }
+
     .burger_menu {
         width: 30px;
         height: 2px;
         background-color: $mainTextColor;
         display: block;
+
         &:focus {
             transform: rotate(45deg);
         }
@@ -200,7 +233,9 @@ header {
             position: relative;
             background-color: $mainTextColor;
             bottom: 10px;
+            transition: all 0.5s;
         }
+
         &::after {
             content: '';
             width: 30px;
@@ -209,22 +244,38 @@ header {
             position: relative;
             background-color: $mainTextColor;
             top: 8px;
+            transition: all 0.5s;
         }
     }
 }
+
+//части бургерного меню
 .burger_block {
     position: absolute;
     z-index: 2;
-    display: flex;
+    display: none;
+    flex-direction: column;
     width: 100%;
+    height: 100vh;
     align-items: center;
     justify-content: space-between;
     background-color: $bodyColor;
     left: 0;
     top: 0;
-    padding: 30px 30px;
-    display: none;
-    // left: calc(100% + 30px);
+    padding: 25px 30px;
+    left: 100%;
+    transition: left 0.5s;
+    @media (max-width: 768px) {
+        display: flex;
+    }
+    
+    .logo_and_search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - (50%/3));
+        align-self: flex-start;
+    }
 
     .header_search_input_block {
         display: flex;
@@ -233,6 +284,7 @@ header {
         background-color: rgba(196, 196, 196, 0.05);
         text-decoration: none;
         border: none;
+        width: 80%;
         height: 60px;
         border-radius: 15px;
         padding: 0 30px;
@@ -243,11 +295,13 @@ header {
             border-radius: 0;
             background-color: $bodyColor;
         }
+
         #headerSearchInput {
             background-color: initial;
             border: none;
             outline: none;
             padding: 0;
+            width: 75%;
             color: $secondTextColor;
             &::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.38); transition: opacity .5s};
             &:focus::-webkit-input-placeholder {opacity: 0};
@@ -262,6 +316,101 @@ header {
 
         p {
             color: $mainTextColor;
+        }
+    }
+
+    .languade_and_profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .reg {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            font-family: 'Manrope';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 130%;
+            color: $mainTextColor;
+            
+            .avatar{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 2px solid $mainSiteColor;
+                background-color: $mainSiteColor;
+            }
+        }
+    }
+
+    .savingsAccount {
+        align-self: start;
+    }
+
+    .navigation {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        align-self: start;
+    }
+
+    .navigation-menu {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 30px;
+        flex-direction: column;
+        row-gap: 20px;
+
+        
+        .navigation-menu-item-link {
+            transition: 0.3s;
+            color: $mainTextColor;
+        }
+    }
+
+    .to_catalog{
+        width: 100%;
+        height: 60px;
+        border: 1px solid #13101B;
+        border-radius: 10px;
+        color: $mainTextColor;
+        font-family: 'Manrope';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        &:hover {
+            color: $mainSiteColor;
+        }
+        &:focus {
+            border-color: $mainSiteColor;
+        }
+    }
+
+    .profile_attributes_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+//класс когда кнопка бургерного меню активированна
+.activated_burger_btn {
+    transform: rotate(45deg);
+    
+    .burger_menu {
+        width: 15px;
+        &::before {
+            width: 15px;
+            bottom: 0;
+            transform: rotate(-90deg);
+        }
+        &::after {
+            width: 15px;
+            top: -1.75px;
         }
     }
 }
