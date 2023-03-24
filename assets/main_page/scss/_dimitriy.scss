@@ -1,0 +1,84 @@
+.aviasales {
+    border: 1px;
+    border-radius: 18px;
+}
+
+.dimitriy {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    font-family: 'Manrope';
+}
+
+.game-name {
+    margin: 0;
+}
+
+.priceE {
+    font-size: 24px;
+    margin: 0;
+}
+
+.game-key, .steamacc {
+    color: gray;
+}
+
+.prePrice {
+    font-size: 16px;
+    color: gray;
+}
+
+.kumuletiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.divElement {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    position: relative;
+    gap: 20px;
+    @media (max-width: 426px) {
+        width: 100%;    
+    }
+}
+
+
+
+.divElement > img{
+    width: 100%;
+}
+
+.percent {
+    color: #77BE1D;
+}
+
+.gemabodi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 32px;
+    background: #77BE1D;
+    border-radius: 8px;
+}
+
+.bababoi {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.ADOLF {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.sale {
+    margin-bottom: 25px;
+}
+
