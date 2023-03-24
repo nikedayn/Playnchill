@@ -1,12 +1,7 @@
 // main
-
 .menu-to-centre {
     display: flex;
     position: relative;
-}
-
-.m-d-m {
-    height: 360px;
 }
 
 /* Minecraft blocks */
@@ -289,7 +284,6 @@
     display: flex;
     text-align: center;
     gap: 0 30px;
-    padding-top: 100px;
     font-family: 'Manrope';
     font-weight: 500;
     font-size: 20px;
@@ -302,6 +296,7 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px 15px;
+        padding-top: 100px;
     }
 }
 

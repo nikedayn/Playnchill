@@ -2,7 +2,6 @@
 let languageBtn = document.querySelector('#btnLanguageChange');
 let languageList = document.querySelector('#languageList');
 let listSvg = document.querySelector(`#btnLanguageChange > svg`);
-console.log(languageList);
 
 // елементы для desctop
 let languageBtnMobile = document.querySelector('#btnLanguageChangeMobile');
@@ -49,7 +48,6 @@ languageBtnMobile.addEventListener('click', () => {
 languageListMobile.addEventListener('click', (e) => {
     if(e.target.classList.contains('language_list_item_link')){
         if(flagForLanguageli == 0){
-            console.log(flagForLanguageli);
             let li = e.target.parentNode;
             let liArr = document.querySelectorAll('.language_list_item');
             if(!li.classList.contains('green')){
@@ -62,7 +60,6 @@ languageListMobile.addEventListener('click', (e) => {
             }
         }
         else if(flagForLanguageli == 1){
-            console.log(flagForLanguageli);
             let li = e.target.parentNode;
             let liArr = document.querySelectorAll('.language_list_item');
             if(!li.classList.contains('green')){
